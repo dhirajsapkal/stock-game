@@ -1,0 +1,502 @@
+body {
+  font-family: 'Roboto';
+  padding-top: 60px;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.sidebar-toggle{
+  display: block;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: block!important;
+}
+
+.paper{
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,1), 0px 3px 3px 0px rgba(0,0,0,0.17);
+  -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,1), 0px 3px 3px 0px rgba(0,0,0,0.17);
+  box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,1), 0px 3px 3px 0px rgba(0,0,0,0.17);
+}
+
+/*navbar*/
+
+.navbar {
+  min-height: 40px;
+  background-color: #00bcd4!important;
+  color: #f9f9f9!important;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.17);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.17);
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.17);
+  z-index: 10;
+}
+
+
+/*#main-nav {
+  position: fixed;
+  top: -16px;
+  z-index: 1;
+  height: 104%;
+  left: -300px;
+}
+
+#main-nav.show{
+  left: 0;
+}
+
+#nav-button, #nav-button:hover, #nav-button:focus{
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+  top: 0px;
+  visibility: visible;
+  position: fixed;
+}
+
+#nav-button > .fa-close, #nav-button > .fa-close:hover, #nav-button > .fa-close:focus {
+  position: absolute;
+  top: -96%;
+}
+*/
+.icon-preview i {
+  font-size: 20px;
+  line-height: 40px;
+  color: #005e6a;
+}
+
+#menu-toggle:hover, #menu-toggle:focus{
+  text-decoration: none;
+}
+
+.search input{
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: #b2b2b2;
+  width: 100%;
+}
+
+.search i {
+  line-height: 20px;
+  float: right;
+  color: #b2b2b2;
+}
+
+.btn-group{
+  margin: 0;
+  box-shadow: none;
+}
+
+.btn-group .btn {
+  background-image: none;
+  font-size: 10px;
+  padding: 15px 15px;
+  font-weight: 700;
+  color: #797979!important;
+}
+
+.btn-group a:hover, .btn-group a:focus {
+  -webkit-box-shadow: inset 0px -2px 0px 0px rgba(4,139,156,1)!important;
+  -moz-box-shadow: inset 0px -2px 0px 0px rgba(4,139,156,1)!important;
+  box-shadow: inset 0px -2px 0px 0px rgba(4,139,156,1)!important;
+  color: #048b9c!important;
+}
+
+/*listing*/
+
+.listing {
+  padding: 0px 0px;
+}
+
+.listing-item {
+  padding: 15px 20px;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(165,165,165,0.31);
+  -moz-box-shadow: 0px 1px 0px 0px rgba(165,165,165,0.31);
+  box-shadow: 0px 1px 0px 0px rgba(165,165,165,0.31);
+  cursor: pointer;
+}
+
+.listing-picture {
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  background-color: #b0b0b0;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.listing-item h3 {
+  font-size: 14px;
+  color: #878787;
+  margin: 0px 0px;
+  font-weight: 400;
+}
+
+.listing-item h4 {
+  font-size: 10px;
+  color: #878787;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+.listing-item h5 {
+  margin: 0px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.listing-item h6 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #3d9400;
+}
+
+.item1 .listing-picture {
+  background-color: #812968;
+  background-image: url('../images/yahoo_Y.svg');
+}
+
+.item2 .listing-picture {
+  background-color: #62a6fb;
+  background-image: url('../images/google-g.png');
+}
+
+.item3 .listing-picture {
+  /*background-color: #62a6fb;*/
+  background-image: url('../images/Apple_Logo.png');
+  background-size: 60%;
+}
+
+.triangle-indicator {
+  position: relative;
+  height: 8px;
+  width: 12px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #3d9400;
+  top: 5px;
+}
+
+.triangle-big{
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #3d9400;
+  top: 8px;
+}
+
+/*ticker*/
+
+.ticker > h1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #626262;
+  font-weight: 300;
+}
+
+.ticker > h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c6c6c6;
+  margin: 0px 0px;
+}
+
+.ticker > h2 span {
+  color:#c5c5c5;
+}
+
+.graph {
+  margin-top: 60px;
+}
+
+.ticker-stock-info{
+  margin-top: 87px;
+}
+
+.ticker-stock-info h1{
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.ticker-stock-info h2{
+  color: #3d9400;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 15px
+}
+
+.ticker-stock-info h3{
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #bdbdbd;
+  margin: 0px 0px;
+}
+
+.toggles > ul {
+  list-style: none;
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+
+.toggles > .row > ul > li{
+  display: inline;
+}
+
+.toggles > .row > ul > li a {
+  /*width: 60px;*/
+  padding: 4px 10px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #646464;
+  background-color: #f9f9f9;
+  background-image: none;
+}
+
+.btn-default:focus{
+  color: white!important;
+  text-decoration: none;
+  text-shadow:none;
+}
+
+.btn-xs:focus {
+  background-color: #0ca5b8!important;
+}
+
+.btn-default:active {
+  color: #0ca5b8!important;
+}
+
+.data-table {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  color: #878787;
+  line-height: 22px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.data-table  tr {
+  padding: 5px 0px;
+}
+
+.stock-ticker{
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.stock-ticker table {
+  width: 100%;
+}
+
+.stock-ticker td {
+  font-size: 10px;
+  font-weight: 400;
+  color: #878787;
+  padding: 5px;
+}
+
+.stock-ticker span {
+  font-size: 12px;
+}
+
+.red {
+  color: #dd4b39;
+}
+
+.green {
+  color: #3d9400;
+}
+
+#nav-button{
+  background-color: #
+}
+
+
+/*Media queries for the fixed ticker*/
+
+@media screen and (max-width: 768px) {
+  .ticker{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 110px;
+    width: 100%;
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,1), 0px -3px 6px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,1), 0px -3px 6px 0px rgba(0,0,0,0.21);
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,1), 0px -3px 6px 0px rgba(0,0,0,0.21);
+  }
+
+  .ticker > h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #878787;
+    margin-bottom: 7px;
+  }
+
+  .ticker > h2{
+    color: #878787;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .desk-only {
+    display: none;
+  }
+
+  .ticker-stock-info{
+    margin-top: 0px;
+  }
+
+  .ticker-stock-info h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 0px;
+  }
+
+  .ticker-stock-info h2 {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .ticker-stock-info h3 {
+    font-size: 10px;
+  }
+
+  .triangle-big {
+    position: absolute;
+    left: 90px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 9px solid #3d9400;
+  }
+
+  .mob-sticky {
+    position: absolute;
+    top: 3px;
+    right: 50px;
+  }
+
+  .stock-ticker{
+    margin-top: 0;
+  }
+
+  .stock-ticker td{
+    padding: 10px;
+  }
+}
+
+.listed-links, .search, .paper {
+  width: 100%;
+}
+
+
+
+
+/*------------------------------------stock details page-------------------------------------------------------*/
+
+.stock-title h2{
+  font-size: 16px;
+  color: #626262;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.stock-title h3{
+  font-size: 16px;
+  color: #626262;
+  font-weight: 400;
+  opacity: 0.4;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stock-title h1 {
+  font-size: 25px;
+  color: #dd4b39;
+  margin-top: 0px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.stock-title h4{
+  font-size: 14px;
+  color: #dd4b39;
+  opacity: 0.4;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.stock-title .triangle-big {
+  top: 18px;
+  left: 0;
+  transform: rotate(180deg);
+  border-bottom-color: #dd4b39;
+}
+
+.stock-data{
+  margin-top: 10px;
+}
+
+.stock-data .data-table {
+  margin-top: 0;
+}
+
+.stock-data .btn-primary {
+  background-color: #00bcd4!important;
+  background-image: none;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 12px 20px;
+  text-transform: none;
+}
+
+.stock-data i {
+  margin-right: 10px;
+}
+
+.stock-graph {
+  margin-top: 10px;
+}
+
+.stock-graph > .graph {
+  margin-top: 0;
+}
+
+.stock-performance {
+  text-align: center;
+}
+
+.stock-performance strong {
+  position: relative;
+  top: -42px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #626262;
+  opacity: 0.5;
+  left: -64px;
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/material.min.css" rel="stylesheet">
+  <link href="css/jquery.materialripple.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sidebar.css" media="screen" type="text/css" />
+  <title>Stock Market portfolio</title>
+  <script src="js/Chart.js"></script>
+  <script src="js/modernizr.js"></script>
+</head>
+<body>
+  <div class="sidebar-overlay"></div>
+  <aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+    <!-- Sidebar header -->
+    <div class="sidebar-header header-cover" style="background-image: url(images/background.jpg);">
+      <!-- Sidebar toggle button -->
+      <button type="button" class="sidebar-toggle">
+        <i class="icon-material-sidebar-arrow"></i>
+      </button>
+      <!-- Sidebar brand image -->
+      <div class="sidebar-image">
+        <img src="images/Dhiraj.jpg">
+      </div>
+      <!-- Sidebar brand name -->
+      <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        dhirajsapkal@gmail.com
+        <b class="caret"></b>
+      </a>
+    </div>
+
+    <!-- Sidebar navigation -->
+    <ul class="nav sidebar-nav">
+      <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+          <li>
+            <a href="#" tabindex="-1">
+              Profile
+            </a>
+          </li>
+          <li>
+            <a href="#" tabindex="-1">
+              Settings
+            </a>
+          </li>
+          <li>
+            <a href="#" tabindex="-1">
+              Help
+            </a>
+          </li>
+          <li>
+            <a href="#" tabindex="-1">
+              Log out
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class="sidebar-icon mdi-action-home"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="sidebar-icon mdi-action-dashboard"></i>
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="sidebar-icon mdi-action-track-changes"></i>
+          Tracker
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="sidebar-icon mdi-action-trending-up"></i>
+          News
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="sidebar-icon mdi-action-assessment"></i>
+          Diagnosis
+        </a>
+      </li>
+      <li class="divider"></li>
+      <li class="dropdown">
+        <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+          Market
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#" tabindex="-1">
+              NSE
+              <span class="sidebar-badge">12</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" tabindex="-1">
+              NASDAQ
+              <span class="sidebar-badge">0</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" tabindex="-1">
+              BSE
+              <span class="sidebar-badge">0</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" tabindex="-1">
+              HKE
+              <span class="sidebar-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          Notifications
+          <span class="sidebar-badge">3</span>
+        </a>
+      </li>
+    </ul>
+    <!-- Sidebar divider -->
+    <!-- <div class="sidebar-divider"></div> -->
+
+    <!-- Sidebar text -->
+    <!--  <div class="sidebar-text">Text</div> -->
+  </aside>
+  <div class="wrapper">
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
+            <div class="icon-preview sidebar-toggle"><i class="mdi-navigation-menu"></i></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="stock-title paper">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <h2>Apple Inc.</h2>
+                    <h3>NASDAQ: AAPL</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <div class="triangle-indicator triangle-big triangle-green"></div>
+                      </div>
+                      <div class="col-xs-8">
+                        <h1>51.22</h1>
+                        <h4>0.03 (0.06%)</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="stock-data paper">
+                <div class="row">
+                  <div class="col-xs-12 col-md-8">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <table class="data-table">
+                          <tr>
+                            <td>Open</td>
+                            <td>51.54</td>
+                          </tr>
+                          <tr>
+                            <td>High</td>
+                            <td>51.68</td>
+                          </tr>
+                          <tr>
+                            <td>Low</td>
+                            <td>50.95</td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="col-xs-6">
+                        <table class="data-table">
+                          <tr>
+                            <td>
+                              Market cap
+                            </td>
+                            <td>48.29B</td>
+                          </tr>
+                          <tr>
+                            <td>P/E ratio (ttm)</td>
+                            <td>51.68</td>
+                          </tr>
+                          <tr>
+                            <td>Dividend yeild</td>
+                            <td>50.95</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="javascript:void(0)" class="btn btn-primary ripple"><i class="sidebar-icon mdi-action-track-changes"></i>Add to tracker</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="stock-graph paper">
+                <div class="graph">
+                  <canvas id="canvas"></canvas>
+                </div>
+                <div class="toggles">
+                  <div class="row">
+                    <ul>
+                      <li><div class="col-xs-3"><a href="javascript:void(0)" class="btn btn-default btn-xs ripple">1 Day</a></div></li>
+                      <li><div class="col-xs-3"><a href="javascript:void(0)" class="btn btn-default btn-xs ripple">5 Days</a></div></li>
+                      <li><div class="col-xs-3"><a href="javascript:void(0)" class="btn btn-default btn-xs ripple">1 Week</a></div></li>
+                      <li><div class="col-xs-3"><a href="javascript:void(0)" class="btn btn-default btn-xs ripple">1 Month</a></div></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="stock-performance paper">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div id="buying"><strong></strong></div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div id="selling"><strong></strong></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.materialripple.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/circle-progress.js"></script>
+  <script>
+    var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+    var lineChartData = {
+      labels : ["2:00PM","3:00PM","4:00PM","5:00PM"],
+      datasets : [
+        {
+          label: "My First dataset",
+          fillColor : "rgba(236,226,233,1)",
+          strokeColor : "#a1628f",
+          pointColor : "#812968",
+          pointStrokeColor : "#fff",
+          pointHighlightFill : "#fff",
+          pointHighlightStroke : "rgba(220,220,220,1)",
+          data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+        }
+      ]
+
+    }
+
+  window.onload = function(){
+    var ctx = document.getElementById("canvas").getContext("2d");
+    window.myLine = new Chart(ctx).Line(lineChartData, {
+      responsive: true
+    });
+  }
+  </script>
+  <script>
+    $(function(){
+      $('.ripple').materialripple();
+    });
+  </script>
+  <script>
+    $('#buying').circleProgress({
+        value: 0.25,
+        size: 100,
+        fill: {
+            color: "#5da22c"
+        },
+        emptyFill: 'rgba(243, 243, 243, 1)',
+        thickness: '4px',
+        animation: {
+          duration: 1000,
+          easing: 'circleProgressEasing'
+        },
+      }).on('circle-animation-progress', function(event, progress, stepValue) {
+      $(this).find('strong').text(String(stepValue.toFixed(2)).substr(1)*100 + '%');
+    });
+    $('#selling').circleProgress({
+        value: 0.75,
+        size: 100,
+        fill: {
+            color: "#dd6859"
+        },
+        emptyFill: 'rgba(243, 243, 243, 1)',
+        thickness: '4px',
+        animation: {
+          duration: 1000,
+          easing: 'circleProgressEasing'
+        },
+      }).on('circle-animation-progress', function(event, progress, stepValue) {
+      $(this).find('strong').text(String(stepValue.toFixed(2)).substr(1)*100 + '%');
+    });
+  </script>
+</body>
+</html>
