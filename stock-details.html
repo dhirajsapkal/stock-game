@@ -5,7 +5,7 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
   <link href="css/bootstrap-theme.min.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/material.min.css" rel="stylesheet">
+  <link href="css/material.css" rel="stylesheet">
   <link href="css/jquery.materialripple.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="css/sidebar.css" media="screen" type="text/css" />
@@ -60,19 +60,13 @@
         </ul>
       </li>
       <li>
-        <a href="index.html">
-          <i class="sidebar-icon mdi-action-home"></i>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#">
+        <a href="index.html" class="ripple">
           <i class="sidebar-icon mdi-action-dashboard"></i>
           Portfolio
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="ripple">
           <i class="sidebar-icon mdi-action-track-changes"></i>
           Tracker
         </a>
@@ -84,7 +78,7 @@
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="ripple">
           <i class="sidebar-icon mdi-action-assessment"></i>
           Diagnosis
         </a>
@@ -123,7 +117,7 @@
         </ul>
       </li>
       <li>
-        <a href="#">
+        <a href="#" class="ripple">
           Notifications
           <span class="sidebar-badge">3</span>
         </a>
@@ -143,6 +137,9 @@
             <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
             <div class="icon-preview sidebar-toggle"><i class="mdi-navigation-menu"></i></div>
           </div>
+          <div class="col-xs-6 col-xs-offset-2" style="text-align:right;">
+            <a href="#" id="track1" class="addtracker ripple"><i class="sidebar-icon mdi-action-track-changes"></i>Add to tracker</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -160,7 +157,7 @@
                   <div class="col-xs-6">
                     <div class="row">
                       <div class="col-xs-4">
-                        <div class="triangle-indicator triangle-big triangle-green"></div>
+                        <div class="triangle-indicator triangle-big"></div>
                       </div>
                       <div class="col-xs-8">
                         <h1>51.22</h1>
@@ -215,7 +212,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <a href="javascript:void(0)" class="btn btn-primary ripple"><i class="sidebar-icon mdi-action-track-changes"></i>Add to tracker</a>
+                    <a href="#" id="track2" class="btn btn-primary addtracker ripple"><i class="sidebar-icon mdi-action-track-changes"></i>Add to tracker</a>
                   </div>
                 </div>
               </div>
@@ -247,11 +244,245 @@
               <div class="stock-performance paper">
                 <div class="row">
                   <div class="col-xs-6">
-                    <div id="buying"><strong></strong></div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="buying">
+                          <div id="buying"><strong></strong></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h2>Buying</h2>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-xs-6">
-                    <div id="selling"><strong></strong></div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="buying">
+                          <div id="selling"><strong></strong></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h2>Selling</h2>
+                      </div>
+                    </div>
                   </div>
+                </div>
+                <div class="row">
+                  <div class="stock-performance-data">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <p class="lable">Status</p>
+                        </div>
+                        <div class="col-xs-8">
+                          <p class="description">Unusual <span>Weakness</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <p class="lable">Advice</p>
+                        </div>
+                        <div class="col-xs-8">
+                          <p class="description">Do not sell, observe trends and wait.</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="stock-stories paper">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h1>Related stories</h1>
+                  </div>
+                </div>
+                <div class="seperator"></div>
+                <a class="rippple" href="http://americasmarkets.usatoday.com/2015/01/02/sour-apple-stock-falls-into-correction/" target="_blank">
+                  <div class="stock-article">
+                    <div class="row">
+                      <div class="col-xs-8">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <p class="title">Sour Apple: Stock falls into correction!</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <p>Yahoo Finance - 2 hours ago</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <p class="summary">If you're like most investors, buying more Apple stock is probably on on top of your New Year's resolutions list. But the stock is reminding ...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <img class="img-responsive" src="images/apple_article.jpg">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="seperator"></div>
+                <a class="ripple" href="http://www.fool.com/investing/general/2015/01/03/the-worst-mistake-apple-inc-investors-can-make-rig.aspx" target="_blank">
+                  <div class="stock-article">
+                    <div class="row">
+                      <div class="col-xs-8">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <p class="title">The Worst Mistake Apple Inc. Investors Can Make Right Now</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <p>Motley Fool - 14 hours ago</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <p class="summary">Recently, Apple's stock price has taken a dip due to the sell-off in the broader market. With such impressive gains in the book and Apple's stock ...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <img class="img-responsive" src="images/apple3.jpg">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="seperator"></div>
+                <a class="ripple" href="http://www.marketwatch.com/story/itd-be-a-bad-sign-if-apples-stock-fell-below-this-level-2015-01-02" target="_blank">
+                  <div class="stock-article">
+                    <div class="row">
+                      <div class="col-xs-8">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <p class="title">It'd be a 'bad sign' if Apple's stock fell below this level</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <p>MarketWatch - 2 Days ago</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <p class="summary">When it comes to Apple's stock, though, Wilson is a bit more bullish. His prediction is that volatility in the equity markets in 2015 will send ...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <img class="img-responsive" src="images/apple2.jpg">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="seperator"></div>
+                <div class="collapse"  id="collapseArticle">
+                  <a class="ripple" href="http://www.bidnessetc.com/31894-why-apple-inc-aapl-stock-took-a-small-hit-going-into-2015/" target="_blank">
+                    <div class="stock-article">
+                      <div class="row">
+                        <div class="col-xs-8">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <p class="title">Why Apple Inc. (AAPL) Stock Took a Small Hit Going Into...</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <p>Bidness ETC - 1 Jan 2015</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <p class="summary">Apple Inc. (NASDAQ:AAPL) is the darling of the stock market, with an impressive stock price gain of 30% year-over-year; the stock is expected ...</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <img class="img-responsive" src="images/apple4.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="seperator"></div>
+                  <a class="ripple" href="http://finance.yahoo.com/news/should-you-buy-apple-stock-175927155.html" target="_blank">
+                    <div class="stock-article">
+                      <div class="row">
+                        <div class="col-xs-8">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <p class="title">Should you buy Apple stock?</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <p>Yahoo Finance (blog) - 1 Jan 2015</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <p class="summary">At the time of this writing, Apple has a $650 billion market cap. For some perspective, if you combine the GDPs of Greece and Egypt… you're ...</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <img class="img-responsive" src="images/apple5.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="seperator"></div>
+                </div>
+                <a class="see-more btn ripple" id="viewmore" role="button" onclick="toggleview()" data-toggle="collapse" href="#collapseArticle" aria-expanded="false" aria-controls="collapseArticle">View more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="sticky-bottom paper">
+            <div class="col-xs-4 col-md-2 col-md-offset-4">
+              <div class="row">
+                <div class="btn-group btn-group-justified">
+                  <div class="col-xs-6 col-md-6">
+                    <a href="javascript:togglebuy()" class="btn btn-default ripple" style="border-radius:0; width:100%;">BUY</a>
+                  </div>
+                  <div class="col-xs-6 col-md-6">
+                    <a href="javascript:togglesell()" class="btn btn-default spinner-button ripple" style="border-radius:0; width:100%;">SELL</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <input id="stock-spinner" class="spinner-big" type="text" data-bts-mousewheel="true" data-bts-button-down-class="btn btn-default spinner-button spinner-big ripple" data-bts-button-up-class="btn btn-default spinner-button spinner-big ripple" value="0" name="stock-spinner">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-8 col-md-2">
+              <div class="row">
+                <div class="col-xs-12">
+                  <p class="price">Price <img src="images/rupee.svg"><span id="totalcost">800</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div id="buybutton" class="btn addtracker">Buy</div>
+                </div>
               </div>
             </div>
           </div>
@@ -265,6 +496,18 @@
   <script src="js/custom.js"></script>
   <script src="js/index.js"></script>
   <script src="js/circle-progress.js"></script>
+  <script src="js/bootstrap.touchspin.js"></script>
+  <script>
+    $("input[name='stock-spinner']").TouchSpin({
+    min: 1, // Minimum value.
+    max: 100, // Maximum value.
+    boostat: 5, // Boost at every nth step.
+    maxboostedstep: 10, // Maximum step when boosted.
+    step: 1, // Incremental/decremental step on up/down change.
+    stepinterval: 100, // Refresh rate of the spinner in milliseconds.
+    stepintervaldelay: 500 // Time in milliseconds before the spinner starts to spin.
+    });
+  </script>
   <script>
     var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
     var lineChartData = {
@@ -300,32 +543,34 @@
     $('#buying').circleProgress({
         value: 0.25,
         size: 100,
+        thickness: '4',
+        startAngle: 45.6,
         fill: {
             color: "#5da22c"
         },
         emptyFill: 'rgba(243, 243, 243, 1)',
-        thickness: '4px',
         animation: {
-          duration: 1000,
+          duration: 2000,
           easing: 'circleProgressEasing'
         },
       }).on('circle-animation-progress', function(event, progress, stepValue) {
-      $(this).find('strong').text(String(stepValue.toFixed(2)).substr(1)*100 + '%');
+      $(this).find('strong').text(Math.round(String(stepValue.toFixed(2)).substr(1)*100)+ '%');
     });
     $('#selling').circleProgress({
         value: 0.75,
         size: 100,
+        thickness: '4',
+        startAngle: 45.6,
         fill: {
             color: "#dd6859"
         },
         emptyFill: 'rgba(243, 243, 243, 1)',
-        thickness: '4px',
         animation: {
-          duration: 1000,
+          duration: 2000,
           easing: 'circleProgressEasing'
         },
       }).on('circle-animation-progress', function(event, progress, stepValue) {
-      $(this).find('strong').text(String(stepValue.toFixed(2)).substr(1)*100 + '%');
+      $(this).find('strong').text(Math.round(String(stepValue.toFixed(2)).substr(1)*100)+ '%');
     });
   </script>
 </body>
